@@ -1,0 +1,27 @@
+{
+  "name": "drm-detector",
+  "version": "1.0.0",
+  "description": "A simple JavaScript library to detect browser-supported DRM features and return an array of supported DRM as strings.",
+  "main": "dist/detectSupportedDrm.js",
+  "types": "dist/detectSupportedDrm.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "drm",
+    "eme",
+    "media",
+    "video",
+    "browser",
+    "Widevine",
+    "PlayReady",
+    "FairPlay",
+    "digital rights management"
+  ],
+  "author": "SimonAllen0901",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
