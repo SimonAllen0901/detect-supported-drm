@@ -1,0 +1,14 @@
+src/
+tsconfig.json
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.vscode/
+.DS_Store
+tests/
+__tests__/
+coverage/
+docs/
+example/
+demo/
+node_modules/
