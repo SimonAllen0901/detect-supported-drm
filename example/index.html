@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>example</title>
+  </head>
+  <body>
+    <h1>DRM DETECT</h1>
+  </body>
+  <script type="module">
+    import { detectSupportedDrm } from "../dist/detectSupportedDrm.js";
+
+    (async () => {
+      const supportedDrms = await detectSupportedDrm();
+      console.log("Supported DRMs:", supportedDrms);
+
+      const resultElement = document.createElement("div");
+      resultElement.textContent = `Supported DRMs: ${supportedDrms.join(", ")}`;
+      document.body.appendChild(resultElement);
+    })();
+  </script>
+</html>
